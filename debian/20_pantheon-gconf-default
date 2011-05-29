@@ -1,0 +1,8 @@
+/apps/gnome-power-manager/lock/use_screensaver_settings true
+/apps/gnome-power-manager/general/use_time_for_policy false
+/desktop/gnome/applications/window_manager/default /usr/bin/compiz
+/desktop/gnome/applications/window_manager/current /usr/bin/compiz
+/apps/metacity/general/theme elementary
+/desktop/gnome/interface/gtk_theme elementary
+/desktop/gnome/interface/icon_theme elementary-mono-dark
+/desktop/gnome/peripherals/mouse/cursor_theme DMZ-Black

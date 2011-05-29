@@ -1,0 +1,5 @@
+debian/gconf/* /usr/share/gconf
+debian/pantheon.desktop /usr/share/xsessions
+debian/pantheon.session /usr/share/gnome-session/sessions
+debian/20_pantheon-gconf-mandatory /usr/share/gconf/pantheon/mandatory
+debian/20_pantheon-gconf-default /usr/share/gconf/pantheon/default

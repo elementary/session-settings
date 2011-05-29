@@ -1,0 +1,9 @@
+[GNOME Session]
+Name=Pantheon
+Required=windowmanager;panel;wallpaper;dock;
+Required-windowmanager=compiz
+Required-panel=wingpanel
+Required-wallpaper=wallpaper
+Required-dock=plank
+DefaultApps=gnome-settings-daemon;
+FallbackSession=classic-gnome

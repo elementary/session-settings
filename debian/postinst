@@ -1,0 +1,47 @@
+#!/bin/sh
+set -e
+
+signal_daemons()
+{
+    # Tell all running daemons to reload their databases
+    pkill -HUP -x gconfd-2 >/dev/null 2>&1 || true
+}
+
+case "$1" in
+  configure|upgrade)
+    if [ -x /usr/lib/gdm/gdm-set-default-session ] ; then
+        /usr/lib/gdm/gdm-set-default-session --keep-old pantheon || true
+    fi
+    if which update-gconf-defaults >/dev/null 2>&1 ; then
+        mkdir -p /var/lib/gconf/pantheon.mandatory
+        mkdir -p /var/lib/gconf/pantheon.default
+    fi
+  ;;
+  triggered)
+    for trigger in $2; do
+      case $trigger in
+        /usr/share/gconf/pantheon/mandatory)
+          update-gconf-defaults --source /usr/share/gconf/pantheon/mandatory \
+          --destination /var/lib/gconf/pantheon.mandatory --no-signal
+        ;;
+        /usr/share/gconf/pantheon/default)
+          update-gconf-defaults --source /usr/share/gconf/pantheon/default \
+          --destination /var/lib/gconf/pantheon.default --no-signal
+        ;;
+      esac
+    done
+    signal_daemons
+    exit 0
+  ;;
+esac
+
+#DEBHELPER#
+
+# Upon installation/upgrade, regenerate all databases, because in this case 
+# there will be no trigger run
+update-gconf-defaults --source /usr/share/gconf/pantheon/mandatory \
+                      --destination /var/lib/gconf/pantheon.mandatory --no-signal
+update-gconf-defaults --source /usr/share/gconf/pantheon/default \
+                      --destination /var/lib/gconf/pantheon.default --no-signal
+signal_daemons
+

@@ -1,0 +1,19 @@
+Source: pantheon-xsession-settings
+Section: x11
+Priority: optional
+Maintainer: Sergey "Shnatsel" Davidoff <shnatsel@gmail.com>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.9.1
+Vcs-Bzr: http://bazaar.launchpad.net/~elementaryart/elementaryos/pantheon-xsession-settings
+
+Package: pantheon-xsession-settings
+Architecture: all
+Depends: ${misc:Depends}, gnome-session-bin, compiz, wingpanel,
+ pantheon-wallpaper, plank, elementary-theme, slingshot-launcher,
+ elementary-icon-theme, dmz-cursor-theme
+Recommends: indicator-application, indicator-datetime, 
+ indicator-me, indicator-messages, indicator-session, indicator-sound
+Description: Pantheon session for login screen
+ This package installs a fully usable X login session and provides some 
+ session-specific configuration files and defaults. Installing this package will 
+ add a session called Pantheon to your login screen.
