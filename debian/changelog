@@ -1,3 +1,10 @@
+pantheon-xsession-settings (0.1.2-0ubuntu1) natty; urgency=low
+
+  * WM fixes
+  * Theme independency, no theme recommendations
+
+ -- Sergey "Shnatsel" Davidoff <shnatsel@gmail.com>  Fri, 03 Jun 2011 22:19:00 +0400
+
 pantheon-xsession-settings (0.1-0ubuntu1) natty; urgency=low
 
   * Initial release
