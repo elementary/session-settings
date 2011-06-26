@@ -1,3 +1,9 @@
+pantheon-xsession-settings (0.2-0ubuntu1) oneiric; urgency=low
+
+  * Applied Oneiric session fix from ammonkey (LP: #799727)
+
+ -- Sergey "Shnatsel" Davidoff <shnatsel@gmail.com>  Sun, 26 Jun 2011 15:38:09 +0400
+
 pantheon-xsession-settings (0.1.2-0ubuntu1) natty; urgency=low
 
   * WM fixes
