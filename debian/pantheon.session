@@ -1,8 +1,7 @@
 [GNOME Session]
 Name=Pantheon
 RequiredComponents=gnome-settings-daemon;
-RequiredProviders=windowmanager;panel;dock;
+RequiredProviders=windowmanager;watchdog;
 DefaultProvider-windowmanager=compiz
-DefaultProvider-panel=wingpanel
-DefaultProvider-dock=plank
+DefaultProvider-watchdog=cerbere
 FallbackSession=ubuntu-2d
