@@ -2,6 +2,6 @@
 Name=Pantheon
 Comment=This session provides elementary experience
 Exec=gnome-session --session=pantheon
-TryExec=gnome-session
+TryExec=wingpanel
 Icon=
 Type=Application

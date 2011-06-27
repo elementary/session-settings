@@ -5,4 +5,4 @@ RequiredProviders=windowmanager;panel;dock;
 DefaultProvider-windowmanager=compiz
 DefaultProvider-panel=wingpanel
 DefaultProvider-dock=plank
-FallbackSession=ubuntu
+FallbackSession=ubuntu-2d

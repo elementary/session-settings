@@ -1,3 +1,9 @@
+pantheon-xsession-settings (0.3-0ubuntu1) oneiric; urgency=low
+
+  * Massive cleanup
+
+ -- Sergey "Shnatsel" Davidoff <shnatsel@gmail.com>  Mon, 27 Jun 2011 20:22:23 +0400
+
 pantheon-xsession-settings (0.2-0ubuntu1) oneiric; urgency=low
 
   * Applied Oneiric session fix from ammonkey (LP: #799727)
