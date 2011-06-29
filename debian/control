@@ -8,7 +8,7 @@ Vcs-Bzr: http://bazaar.launchpad.net/~elementaryart/elementaryos/pantheon-xsessi
 
 Package: pantheon-xsession-settings
 Architecture: all
-Depends: ${misc:Depends}, gnome-session-bin, compiz, wingpanel,
+Depends: ${misc:Depends}, gnome-session-bin, cerbere, compiz, wingpanel,
  pantheon-wallpaper, plank, slingshot-launcher
 Recommends: indicator-application, indicator-datetime, 
  indicator-me, indicator-messages, indicator-session, indicator-sound
