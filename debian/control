@@ -9,9 +9,10 @@ Vcs-Bzr: http://bazaar.launchpad.net/~elementaryart/elementaryos/pantheon-xsessi
 Package: pantheon-xsession-settings
 Architecture: all
 Depends: ${misc:Depends}, gnome-session-bin, gnome-settings-daemon, cerbere,
- compiz, wingpanel, pantheon-wallpaper, plank, slingshot-launcher
-Recommends: indicator-application, indicator-datetime, 
- indicator-me, indicator-messages, indicator-session, indicator-sound
+ compiz
+Recommends: wingpanel, pantheon-wallpaper, plank,
+ indicator-application, indicator-datetime, indicator-me, indicator-messages,
+ indicator-session, indicator-sound
 Description: Pantheon session for login screen
  This package installs a fully usable X login session and provides some 
  session-specific configuration files and defaults. Installing this package will 
