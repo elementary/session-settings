@@ -1,3 +1,9 @@
+pantheon-xsession-settings (0.5) oneiric; urgency=low
+
+  * Added setting default session for LigthDM [didrocks] (LP: #803682)
+
+ -- Sergey "Shnatsel" Davidoff <shnatsel@gmail.com>  Fri, 26 Aug 2011 15:17:07 +0400
+
 pantheon-xsession-settings (0.4-0) oneiric; urgency=low
 
   * Integrated Cerbere chainloading [ammonkey]
