@@ -1,6 +1,5 @@
 [GNOME Session]
 Name=Pantheon
-RequiredComponents=gnome-settings-daemon;
 RequiredProviders=windowmanager;watchdog;
 DefaultProvider-windowmanager=compiz
 DefaultProvider-watchdog=cerbere
