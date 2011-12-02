@@ -1,0 +1,2 @@
+# Additional mandatory path for pantheon experience
+xml:readonly:/var/lib/gconf/pantheon.mandatory
