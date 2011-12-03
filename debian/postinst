@@ -2,6 +2,7 @@
 
 set -e
 
+# Register gnome-session as a session manager (should be done by gnome-session-bin, actually):
 if [ "$1" = configure ]; then
   update-alternatives --install /usr/bin/x-session-manager \
     x-session-manager /usr/bin/gnome-session 50 \
@@ -9,6 +10,7 @@ if [ "$1" = configure ]; then
     x-session-manager.1.gz /usr/share/man/man1/gnome-session.1.gz
 fi
 
+# Add our session for consideration into LightDM configs
 case "$1" in
   configure|upgrade)
     if [ -x /usr/lib/lightdm/lightdm-set-defaults ] ; then
@@ -17,4 +19,45 @@ case "$1" in
   ;;
 esac
 
+# Apply GConf default and mandatory values for Pantheon session
+
+signal_daemons()
+{
+    # Tell all running daemons to reload their databases
+    pkill -HUP -x gconfd-2 >/dev/null 2>&1 || true
+}
+
+case "$1" in
+  configure|upgrade)
+    if which update-gconf-defaults >/dev/null 2>&1 ; then
+        mkdir -p /var/lib/gconf/pantheon.mandatory
+        mkdir -p /var/lib/gconf/pantheon.default
+    fi
+  ;;
+  triggered)
+    for trigger in $2; do
+      case $trigger in
+        /usr/share/gconf/pantheon/mandatory)
+          update-gconf-defaults --source /usr/share/gconf/pantheon/mandatory \
+          --destination /var/lib/gconf/pantheon.mandatory --no-signal
+        ;;
+        /usr/share/gconf/pantheon/default)
+          update-gconf-defaults --source /usr/share/gconf/pantheon/default \
+          --destination /var/lib/gconf/pantheon.default --no-signal
+        ;;
+      esac
+    done
+    signal_daemons
+    exit 0
+  ;;
+esac
+
 #DEBHELPER#
+
+# Upon installation/upgrade, regenerate all databases, because in this case 
+# there will be no trigger run
+update-gconf-defaults --source /usr/share/gconf/pantheon/mandatory \
+                      --destination /var/lib/gconf/pantheon.mandatory --no-signal
+update-gconf-defaults --source /usr/share/gconf/pantheon/default \
+                      --destination /var/lib/gconf/pantheon.default --no-signal
+signal_daemons
