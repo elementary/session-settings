@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Bluetooth Manager
+Comment=Bluetooth Manager applet
+Icon=bluetooth
+Exec=bluetooth-applet
+Terminal=false
+Type=Application
+Categories=
+OnlyShowIn=Pantheon;
+NoDisplay=true
+X-Ubuntu-Gettext-Domain=gnome-bluetooth2
