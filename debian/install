@@ -2,3 +2,4 @@ debian/pantheon.desktop /usr/share/xsessions
 debian/pantheon.session /usr/share/gnome-session/sessions
 gconf/* /usr/share/gconf/
 autostart/* /etc/xdg/autostart/
+xdg-pantheon /etc/xdg/

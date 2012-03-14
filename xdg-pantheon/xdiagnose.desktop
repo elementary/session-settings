@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=xdiagnose
+Comment=X.org Diagnostic and Repair Utility
+Categories=GNOME;Utility;
+Exec=xdiagnose
+Icon=/usr/share/xdiagnose/icons/microscope.svg
+Terminal=false
+Type=Application
+NoDisplay=true

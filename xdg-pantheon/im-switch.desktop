@@ -1,0 +1,19 @@
+[Desktop Entry]
+Name=Input Method Switcher
+Name[ja]=入力メソッド切換器
+Name[zh_TW]=輸入法切換器
+Name[zh_HK]=輸入法切換器
+Name[zh_CN]=输入法切换器
+Name[vi_VN]=Trình chuyển cách nhập liệu
+Comment=Set Keyboard Input Method
+Comment[ja]=キーボード入力メソッドの設定
+Comment[zh_TW]=設定鍵盤輸入模式
+Comment[zh_HK]=設定鍵盤輸入模式
+Comment[zh_CN]=设定键盘输入模式
+Comment[vi_VN]=Chọn kiểu nhập bàn phím
+Type=Application
+Exec=im-switch
+Terminal=false
+Icon=input-keyboard
+Categories=Settings
+NotShowIn=GNOME;KDE;pantheon;
