@@ -3,3 +3,4 @@ debian/pantheon.session /usr/share/gnome-session/sessions
 gconf/* /usr/share/gconf/
 autostart/* /etc/xdg/autostart/
 xdg-pantheon /etc/xdg/
+unity-greeter /usr/share/
