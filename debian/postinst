@@ -22,17 +22,12 @@ signal_daemons()
 case "$1" in
   configure|upgrade)
     if which update-gconf-defaults >/dev/null 2>&1 ; then
-        mkdir -p /var/lib/gconf/pantheon.mandatory
         mkdir -p /var/lib/gconf/pantheon.default
     fi
   ;;
   triggered)
     for trigger in $2; do
       case $trigger in
-        /usr/share/gconf/pantheon/mandatory)
-          update-gconf-defaults --source /usr/share/gconf/pantheon/mandatory \
-          --destination /var/lib/gconf/pantheon.mandatory --no-signal
-        ;;
         /usr/share/gconf/pantheon/default)
           update-gconf-defaults --source /usr/share/gconf/pantheon/default \
           --destination /var/lib/gconf/pantheon.default --no-signal
@@ -48,8 +43,6 @@ esac
 
 # Upon installation/upgrade, regenerate all databases, because in this case 
 # there will be no trigger run
-update-gconf-defaults --source /usr/share/gconf/pantheon/mandatory \
-                      --destination /var/lib/gconf/pantheon.mandatory --no-signal
 update-gconf-defaults --source /usr/share/gconf/pantheon/default \
                       --destination /var/lib/gconf/pantheon.default --no-signal
 signal_daemons
