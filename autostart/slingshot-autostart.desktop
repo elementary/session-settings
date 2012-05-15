@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Slingshot
+Comment=preloads application launcher
+Icon=
+Exec=/usr/bin/slingshot --silent
+Terminal=false
+Type=Application
+Categories=
+OnlyShowIn=Pantheon;
+NoDisplay=true
