@@ -4,4 +4,4 @@
 /apps/metacity/global_keybindings/run_command_1 "<Super>space"
 /apps/metacity/keybinding_commands/command_1 "slingshot"
 /apps/metacity/general/compositing_manager true
-/apps/metacity/general/compositing_effects false
+/apps/metacity/general/compositor_effects false
