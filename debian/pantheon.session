@@ -2,7 +2,7 @@
 Name=Pantheon
 RequiredComponents=gnome-settings-daemon;
 RequiredProviders=windowmanager;watchdog;
-DefaultProvider-windowmanager=compiz
+DefaultProvider-windowmanager=gala
 DefaultProvider-watchdog=cerbere
 FallbackSession=ubuntu
 DesktopName=Pantheon

@@ -4,12 +4,11 @@ Priority: optional
 Maintainer: Sergey "Shnatsel" Davidoff <shnatsel@gmail.com>
 Build-Depends: debhelper (>= 7)
 Standards-Version: 3.9.1
-Vcs-Bzr: http://bazaar.launchpad.net/~elementaryart/elementaryos/pantheon-xsession-settings
+Vcs-Bzr: http://bazaar.launchpad.net/~elementary-os/elementaryos/pantheon-xsession-settings
 
 Package: pantheon-xsession-settings
 Architecture: all
-Depends: ${misc:Depends}, gnome-session-bin, gnome-settings-daemon, cerbere
-Recommends: pantheon-shell, compiz, compiz-plugins, compiz-plugins-default, compiz-plugins-main-default
+Depends: ${misc:Depends}, gnome-session-bin, gnome-settings-daemon, cerbere, pantheon-shell
 Description: Pantheon session for login screen
  This package installs a fully usable X login session and provides some 
  session-specific configuration files and defaults. Installing this package will 
