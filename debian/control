@@ -8,7 +8,7 @@ Vcs-Bzr: http://bazaar.launchpad.net/~elementary-os/elementaryos/pantheon-xsessi
 
 Package: pantheon-xsession-settings
 Architecture: all
-Depends: ${misc:Depends}, gnome-session-bin, gnome-settings-daemon, cerbere, pantheon-shell
+Depends: ${misc:Depends}, gnome-session-bin, gnome-settings-daemon, cerbere, pantheon-shell (>= 1.268)
 Description: Pantheon session for login screen
  This package installs a fully usable X login session and provides some 
  session-specific configuration files and defaults. Installing this package will 
