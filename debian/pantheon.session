@@ -1,8 +1,7 @@
 [GNOME Session]
 Name=Pantheon
 RequiredComponents=gnome-settings-daemon;
-RequiredProviders=windowmanager;watchdog;
+RequiredProviders=windowmanager;
 DefaultProvider-windowmanager=gala
-DefaultProvider-watchdog=cerbere
 FallbackSession=ubuntu
 DesktopName=Pantheon
