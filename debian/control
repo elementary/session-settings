@@ -9,7 +9,6 @@ Vcs-Bzr: http://bazaar.launchpad.net/~elementary-os/elementaryos/pantheon-xsessi
 Package: pantheon-xsession-settings
 Architecture: all
 Depends: cerbere,
-         gala,
          gnome-session-bin,
          gnome-settings-daemon,
          pantheon-shell,
