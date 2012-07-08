@@ -2,6 +2,6 @@
 /apps/metacity/general/auto_maximize_windows false
 /apps/metacity/general/capture_before_unmap true
 /apps/metacity/global_keybindings/run_command_1 "<Super>space"
-/apps/metacity/keybinding_commands/command_1 "slingshot"
+/apps/metacity/keybinding_commands/command_1 "slingshot-launcher"
 /apps/metacity/general/compositing_manager true
 /apps/metacity/general/compositor_effects false
