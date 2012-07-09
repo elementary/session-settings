@@ -10,6 +10,7 @@ Type=Application
 Categories=GNOME;GTK;Network;InstantMessaging;
 NoDisplay=true
 OnlyShowIn=Pantheon;
+AutostartCondition=GNOME3 unless-session gnome
 X-GNOME-Autostart-Delay=15
 X-GNOME-Autostart-Phase=Application
 X-GNOME-Autostart-Notify=true
