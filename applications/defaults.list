@@ -2,7 +2,6 @@
 application/ogg=noise.desktop
 application/pdf=evince.desktop
 application/postscript=evince.desktop
-application/rtf=scratch-text-editor.desktop
 application/vnd.rn-realmedia=totem.desktop
 application/x-ar=file-roller.desktop
 application/x-arj=file-roller.desktop
