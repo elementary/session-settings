@@ -157,3 +157,4 @@ x-scheme-handler/apt=ubuntu-software-center.desktop
 x-scheme-handler/http=midori.desktop
 x-scheme-handler/https=midori.desktop
 x-scheme-handler/mailto=geary.desktop
+x-scheme-handler/trash=pantheon-files.desktop
