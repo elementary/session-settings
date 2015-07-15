@@ -1,6 +1,7 @@
 autostart/* /etc/xdg/autostart/
-debian/pantheon.desktop /usr/share/xsessions
-debian/pantheon.session /usr/share/gnome-session/sessions
+xsessions/pantheon.desktop /usr/share/xsessions
+wayland-sessions/pantheon-wayland.desktop /usr/share/wayland-sessions
+gnome-session/* /usr/share/gnome-session/sessions
 gconf/* /usr/share/gconf/
 unity-greeter /usr/share/
 applications /usr/share/pantheon
