@@ -10,16 +10,4 @@ case "$1" in
   ;;
 esac
 
-case "$1" in
-  remove|purge)
-    if which update-gconf-defaults >/dev/null 2>&1 && [ -d /usr/share/gconf/mandatory/pantheon ]; then
-        update-gconf-defaults --source /usr/share/gconf/pantheon/default \
-        --destination /var/lib/gconf/pantheon.default
-    fi
-    if [ -d /var/lib/gconf/pantheon.default ]; then
-        rm -rf /var/lib/gconf/pantheon.default
-    fi
-    ;;
-esac
-
 #DEBHELPER#

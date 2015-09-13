@@ -1,2 +1,0 @@
-# Additional defaults path for pantheon experience
-xml:readonly:/var/lib/gconf/pantheon.default
