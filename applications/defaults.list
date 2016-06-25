@@ -147,5 +147,5 @@ x-content/image-dcf=shotwell.desktop
 x-content/image-picturecd=shotwell.desktop
 x-scheme-handler/http=epiphany.desktop
 x-scheme-handler/https=epiphany.desktop
-x-scheme-handler/mailto=geary.desktop
+x-scheme-handler/mailto=org.pantheon.mail.desktop
 x-scheme-handler/trash=pantheon-files.desktop
