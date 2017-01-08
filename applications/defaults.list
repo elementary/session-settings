@@ -82,6 +82,7 @@ audio/x-vorbis=org.pantheon.noise.desktop
 audio/x-vorbis+ogg=org.pantheon.noise.desktop
 audio/x-xm=org.pantheon.noise.desktop
 image/bmp=org.pantheon.photos-viewer.desktop
+image/gif=org.pantheon.photos-viewer.desktop
 image/jpeg=org.pantheon.photos-viewer.desktop
 image/jpg=org.pantheon.photos-viewer.desktop
 image/pjpeg=org.pantheon.photos-viewer.desktop
