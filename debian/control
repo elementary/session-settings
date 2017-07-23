@@ -10,7 +10,6 @@ Package: pantheon-xsession-settings
 Architecture: all
 Depends: cerbere,
          gnome-session-bin,
-         gnome-settings-daemon,
          pantheon-shell,
          ${misc:Depends}
 Description: Pantheon session for login screen

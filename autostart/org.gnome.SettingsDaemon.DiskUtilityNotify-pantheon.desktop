@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=gnome-disk-utility notification plugin for GNOME Settings Daemon
+Exec=/usr/lib/gnome-settings-daemon/gsd-disk-utility-notify
+OnlyShowIn=Pantheon;
+NoDisplay=true
+X-GNOME-AutoRestart=true
