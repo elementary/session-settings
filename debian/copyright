@@ -1,8 +1,9 @@
 Upstream-Name: pantheon-xsession-settings
-Source: http://bazaar.launchpad.net/~elementaryart/elementaryos/pantheon-xsession-settings
+Source: https://github.com/elementary/pantheon-xsession-settings
 License: GPL-3
 
 Copyright: 2011 Sergey "Shnatsel" Davidoff <shnatsel@gmail.com>
+           2013 Cody Garver <cody@elementary.io>
 License: GPL-3
 
 Based on Unity 2D package, copyright 2010 Canonical Ltd.
