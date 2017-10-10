@@ -3,7 +3,7 @@ install_data(
     install_dir: join_paths(get_option('datadir'), 'pantheon')
 )
 
-patched_gsd_autostarts = [
+patched_gsd325_autostarts = [
     'org.gnome.SettingsDaemon.A11yKeyboard-pantheon.desktop',
     'org.gnome.SettingsDaemon.A11ySettings-pantheon.desktop',
     'org.gnome.SettingsDaemon.Clipboard-pantheon.desktop',
@@ -28,10 +28,12 @@ patched_gsd_autostarts = [
 
 ]
 
-install_data(
-    patched_gsd_autostarts,
-    install_dir: join_paths(get_option('sysconfdir'), 'xdg', 'autostart')
-)
+if get_option('with-patched-gsd325-autostarts') == true
+    install_data(
+        patched_gsd325_autostarts,
+        install_dir: join_paths(get_option('sysconfdir'), 'xdg', 'autostart')
+    )
+endif
 
 patched_ubuntu_autostarts = [
     'gnome-keyring-gpg-pantheon.desktop',
@@ -44,7 +46,9 @@ patched_ubuntu_autostarts = [
     'user-dirs-update-gtk-pantheon.desktop'
 ]
 
-install_data(
-    patched_ubuntu_autostarts,
-    install_dir: join_paths(get_option('sysconfdir'), 'xdg', 'autostart')
-)
+if get_option('with-patched-gsd325-autostarts') == true
+    install_data(
+        patched_ubuntu_autostarts,
+        install_dir: join_paths(get_option('sysconfdir'), 'xdg', 'autostart')
+    )
+endif
