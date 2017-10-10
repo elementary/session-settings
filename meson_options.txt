@@ -1,0 +1,23 @@
+option('with-defaults-list', type : 'boolean', value: true,
+       description : 'Install defaults.list')
+
+option('with-wayland', type : 'boolean', value: false,
+       description : 'Install Wayland files')
+
+option('with-unity-greeter-badge', type : 'boolean', value: false,
+       description : 'Install unity-greeter custom_pantheon_badge.png')
+
+option('with-x', type : 'boolean', value: false,
+       description : 'Install X files')
+
+option('with-patched-gsd325-autostarts', type : 'boolean', value: true,
+       description : 'Install patched GNOME Settings Daemon 3.25 autostarts')
+
+option('with-patched-gsd318-autostarts', type : 'boolean', value: false,
+       description : 'Install patched GNOME Settings Daemon 3.18 autostarts')
+
+option('with-patched-ubuntu-autostarts', type : 'boolean', value: true,
+       description : 'Install patched Ubuntu autostarts')
+
+option('channel', type : 'string', value: 'unstable',
+       description : 'Stable or unstable code')
