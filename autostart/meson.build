@@ -46,7 +46,7 @@ patched_ubuntu_autostarts = [
     'user-dirs-update-gtk-pantheon.desktop'
 ]
 
-if get_option('with-patched-gsd325-autostarts') == true
+if get_option('with-patched-ubuntu-autostarts') == true
     install_data(
         patched_ubuntu_autostarts,
         install_dir: join_paths(get_option('sysconfdir'), 'xdg', 'autostart')
