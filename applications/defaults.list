@@ -89,6 +89,7 @@ image/pjpeg=io.elementary.photos-viewer.desktop
 image/png=io.elementary.photos-viewer.desktop
 image/tiff=io.elementary.photos-viewer.desktop
 image/vnd.rn-realpix=io.elementary.videos.desktop
+image/webp=io.elementary.photos-viewer.desktop
 image/x-bmp=io.elementary.photos-viewer.desktop
 image/x-png=io.elementary.photos-viewer.desktop
 inode/directory=io.elementary.files.desktop
