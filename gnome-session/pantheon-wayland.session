@@ -1,5 +1,0 @@
-[GNOME Session]
-Name=Pantheon on Wayland
-RequiredComponents=gala-wayland;
-FallbackSession=ubuntu
-DesktopName=Pantheon
