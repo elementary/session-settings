@@ -2,5 +2,4 @@
 applications /usr/share/pantheon
 autostart/* /etc/xdg/autostart/
 gnome-session/pantheon.session /usr/share/gnome-session/sessions
-unity-greeter /usr/share/
 xsessions/pantheon.desktop /usr/share/xsessions
