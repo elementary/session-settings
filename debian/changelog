@@ -1,3 +1,9 @@
+pantheon-xsession-settings (5.0.2) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <cody@elementary.io>  Thu, 26 Jul 2018 23:06:57 -0500
+
 pantheon-xsession-settings (5.0.1) bionic; urgency=medium
 
   * New upstream release.
