@@ -1,5 +1,5 @@
-option('defaults-list', type : 'boolean', value: true,
-       description : 'Install defaults.list')
+option('mimeapps-list', type : 'boolean', value: true,
+       description : 'Install Pantheon default mimetype associations')
 
 option('patched-gsd-autostarts', type : 'boolean', value: true,
        description : 'Install patched GNOME Settings Daemon autostarts')

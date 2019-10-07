@@ -5,7 +5,7 @@ project('elementary-session-settings',
 prefix = get_option('prefix')
 datadir = join_paths(prefix, get_option('datadir'))
 
-if get_option('defaults-list')
+if get_option('mimeapps-list')
     subdir('applications')
 endif
 
