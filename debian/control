@@ -7,7 +7,7 @@ Standards-Version: 3.9.6
 
 Package: pantheon-xsession-settings
 Architecture: all
-Depends: io.elementary.cerbere (>= 0.2.4), gnome-session-bin, gala (>= 0.3.2~), pantheon-shell, ${misc:Depends}
+Depends: gnome-session-bin, gala (>= 0.3.2~), pantheon-shell, ${misc:Depends}
 Description: Pantheon session for login screen
  This package installs a fully usable X login session and provides some
  session-specific configuration files and defaults. Installing this package will
