@@ -1,11 +1,8 @@
 option('mimeapps-list', type : 'boolean', value: true,
        description : 'Install Pantheon default mimetype associations')
 
-option('patched-gsd-autostarts', type : 'boolean', value: true,
-       description : 'Install patched GNOME Settings Daemon autostarts')
-
-option('patched-ubuntu-autostarts', type : 'boolean', value: true,
-       description : 'Install patched Ubuntu autostarts')
-
 option('fallback-session', type : 'string', value: 'ubuntu',
        description : 'Fallback session to use for Pantheon')
+
+option('detect-program-prefixes', type: 'boolean', value: false,
+       description : 'This is needed for platforms that install packages into individual prefixes (like Guix System or NixOS')

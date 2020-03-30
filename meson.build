@@ -9,6 +9,5 @@ if get_option('mimeapps-list')
     subdir('applications')
 endif
 
-subdir('autostart')
-subdir('gnome-session')
+subdir('session')
 subdir('xsessions')
