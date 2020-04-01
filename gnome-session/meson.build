@@ -6,6 +6,7 @@ session_configuration.set('FALLBACK_SESSION', fallback_session)
 pantheon_components = [
   'gala',
   'gala-daemon',
+  'light-locker-pantheon',
 ]
 
 gsd_components = [

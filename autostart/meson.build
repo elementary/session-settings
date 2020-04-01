@@ -16,3 +16,9 @@ if get_option('patched-ubuntu-autostarts')
         strip_directory: true
     )
 endif
+
+install_subdir(
+    'light-locker',
+    install_dir: autostartdir,
+    strip_directory: true
+)
