@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Pantheon
 Comment=This session provides elementary experience
-Exec=gnome-session --session=pantheon
+Exec=gnome-session --builtin --session=pantheon
 TryExec=wingpanel
 Icon=
 DesktopNames=Pantheon
