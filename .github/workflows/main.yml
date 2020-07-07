@@ -4,18 +4,20 @@ on: [push, pull_request]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     container:
       image: elementary/docker:unstable
 
     steps:
-    - uses: actions/checkout@v1
+    - name: Checkout
+      uses: actions/checkout@v2
+
     - name: Install Dependencies
       run: |
         apt update
         apt install -y meson pkg-config gnome-settings-daemon gnome-settings-daemon-dev onboard gnome-keyring orca
+
     - name: Build
       run: |
         meson build
@@ -23,13 +25,14 @@ jobs:
         ninja -C build install
 
   build-nix:
-
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Nix
+
+      - name: Install Nix
         uses: cachix/install-nix-action@v10
+
       - name: Build
         run: 'nix-build --quiet -I nixpkgs=channel:20.03'
