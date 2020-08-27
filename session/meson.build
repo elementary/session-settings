@@ -37,6 +37,10 @@ gsd_mouse_clipboard = [
 # https://gitlab.gnome.org/GNOME/gnome-session/-/commit/86d4132c7810b5c1b2392f63c15b3b90b8a7a4f9
 gsd_usb_protection = ['org.gnome.SettingsDaemon.UsbProtection']
 
+# Needed where we're not using light-locker and are using Gala above 3.3.2
+# We're using 3.36 to target this as it's the first elementary release where this is true
+gsd_screensaver_proxy = ['org.gnome.SettingsDaemon.ScreensaverProxy']
+
 # Needs a minimum 3.28 GNOME stack
 gsd_minimum_version = '>= 3.27.90'
 
@@ -46,6 +50,7 @@ gsd_version = gsd_dep.version()
 # Merge the gsd_components list depending on the gnome-settings-daemon version.
 if gsd_version.version_compare('>=3.36.0')
   gsd_components += gsd_usb_protection
+  gsd_components += gsd_screensaver_proxy
 elif gsd_version.version_compare('< 3.33.90')
   gsd_components += gsd_mouse_clipboard
 endif
