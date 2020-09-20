@@ -98,11 +98,11 @@ foreach component : gsd_components
   )
 endforeach
 
-if get_option('detect-program-prefixes') == true
-  gnome_keyring = find_program('gnome-keyring-daemon')
-  onboard = find_program('onboard')
-  orca = find_program('orca')
+gnome_keyring = find_program('gnome-keyring-daemon')
+onboard = find_program('onboard')
+orca = find_program('orca')
 
+if get_option('detect-program-prefixes') == true
   # TODO: use fs module in meson 0.53.0
   gnome_keyring_prefix = gnome_keyring.path().split('/bin')[0]
   onboard_prefix = onboard.path().split('/bin')[0]
