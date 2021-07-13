@@ -1,3 +1,9 @@
+pantheon-xsession-settings (6.0.0) focal; urgency=medium
+
+  * New upstream release.
+
+ -- Daniel Foré <daniel@elementary.io>  Tue, 13 Jul 2021 14:39:17 -0700
+
 pantheon-xsession-settings (5.0.3) bionic; urgency=medium
 
   * New upstream release.

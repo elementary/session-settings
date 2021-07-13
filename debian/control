@@ -1,7 +1,7 @@
 Source: pantheon-xsession-settings
 Section: x11
 Priority: optional
-Maintainer: Cody Garver <cody@elementary.io>
+Maintainer: elementary, Inc. <builds@elementary.io>
 Build-Depends: debhelper (>= 9), meson, gnome-settings-daemon, gnome-settings-daemon-dev, desktop-file-utils, gnome-keyring, onboard, orca
 Standards-Version: 3.9.6
 
