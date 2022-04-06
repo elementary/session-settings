@@ -23,18 +23,3 @@ jobs:
         meson build
         ninja -C build
         ninja -C build install
-
-  build-nix:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Install Nix
-        uses: cachix/install-nix-action@v12
-        with:
-          nix_path: nixpkgs=channel:nixos-20.03
-
-      - name: Build
-        run: 'nix-build --quiet'
