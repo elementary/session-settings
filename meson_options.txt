@@ -6,3 +6,6 @@ option('fallback-session', type : 'string', value: 'ubuntu',
 
 option('detect-program-prefixes', type: 'boolean', value: false,
        description : 'This is needed for platforms that install packages into individual prefixes (like Guix System or NixOS')
+
+option('systemd', type: 'boolean', value: true,
+       description : 'Install systemd unit files for managing the Pantheon session with gnome-session systemd support')
