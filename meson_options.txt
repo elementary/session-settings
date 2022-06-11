@@ -9,3 +9,6 @@ option('detect-program-prefixes', type: 'boolean', value: false,
 
 option('systemd', type: 'boolean', value: true,
        description : 'Install systemd unit files for managing the Pantheon session with gnome-session systemd support')
+
+option('systemduserunitdir', type: 'string', value: '',
+       description : 'Custom directory for systemd user units')
