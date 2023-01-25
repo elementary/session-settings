@@ -127,7 +127,10 @@ endif
 
 fs = import('fs')
 if fs.is_file(autostarts.get('onboard-autostart'))
-  message('Could not find onboard-autostart. Fallback to local config.')
+  message('Could not find onboard-autostart. Using fallback config.')
+  autostarts += {
+    'onboard-autostart': join_paths(meson.current_source_dir(), 'fallback', 'onboard-autostart.desktop')
+  }
 endif
 
 foreach name, autostart : autostarts
