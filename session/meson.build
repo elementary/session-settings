@@ -126,7 +126,7 @@ else
 endif
 
 fs = import('fs')
-if fs.is_file(autostarts.get('onboard-autostart'))
+if not fs.is_file(autostarts.get('onboard-autostart'))
   message('Could not find onboard-autostart. Using fallback config.')
   autostarts += {
     'onboard-autostart': join_paths(meson.current_source_dir(), 'fallback', 'onboard-autostart.desktop')
