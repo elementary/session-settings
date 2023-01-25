@@ -125,6 +125,11 @@ else
   }
 endif
 
+fs = import('fs')
+if fs.is_file(autostarts.get('onboard-autostart'))
+  message('Could not find onboard-autostart. Fallback to local config.')
+endif
+
 foreach name, autostart : autostarts
   custom_target('create-autostart-' + name,
     input: autostart,
