@@ -14,4 +14,4 @@ option('systemduserunitdir', type: 'string', value: '',
        description : 'Custom directory for systemd user units')
 
 option('wayland', type: 'boolean', value: false,
-	   description: 'Install Wayland session')
+       description: 'Install Wayland session')
