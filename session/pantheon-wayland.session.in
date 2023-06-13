@@ -1,0 +1,5 @@
+[GNOME Session]
+Name=Pantheon (Wayland)
+RequiredComponents=@SESSION_COMPONENTS@
+FallbackSession=pantheon
+DesktopName=Pantheon
