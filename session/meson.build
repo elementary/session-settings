@@ -66,6 +66,24 @@ pantheon_session = configure_file(
   install_dir: join_paths(datadir, 'gnome-session', 'sessions')
 )
 
+if get_option('wayland')
+    wayland_session_components = [
+      'gala-wayland',
+      'gala-daemon',
+      gsd_components
+    ]
+
+    wayland_session_configuration = configuration_data()
+    wayland_session_configuration.set('SESSION_COMPONENTS', ';'.join(wayland_session_components))
+
+    configure_file(
+      input: 'pantheon-wayland.session.in',
+      output: '@BASENAME@',
+      configuration: wayland_session_configuration,
+      install_dir: datadir / 'gnome-session' / 'sessions'
+    )
+endif
+
 autostartdir = join_paths(get_option('sysconfdir'), 'xdg', 'autostart')
 
 gsd_dir = gsd_dep.get_pkgconfig_variable('prefix')
