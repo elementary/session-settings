@@ -67,12 +67,11 @@ pantheon_session = configure_file(
 )
 
 if get_option('wayland')
-    pantheon_wayland_components = [
+    wayland_session_components = [
       'gala-wayland',
       'gala-daemon',
+      gsd_components
     ]
-
-    wayland_session_components = pantheon_wayland_components + gsd_components
 
     wayland_session_configuration = configuration_data()
     wayland_session_configuration.set('SESSION_COMPONENTS', ';'.join(wayland_session_components))
@@ -81,7 +80,7 @@ if get_option('wayland')
       input: 'pantheon-wayland.session.in',
       output: '@BASENAME@',
       configuration: wayland_session_configuration,
-      install_dir: join_paths(datadir, 'gnome-session', 'sessions')
+      install_dir: datadir / 'gnome-session' / 'sessions'
     )
 endif
 
