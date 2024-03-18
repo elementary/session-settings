@@ -67,7 +67,7 @@ pantheon_session = configure_file(
 
 if get_option('wayland')
     wayland_session_components = [
-      'gala-wayland,
+      'gala-wayland',
       gsd_components
     ]
 
