@@ -5,7 +5,6 @@ session_configuration.set('FALLBACK_SESSION', fallback_session)
 
 pantheon_components = [
   'gala',
-  'gala-daemon',
 ]
 
 gsd_components = [
@@ -69,7 +68,6 @@ pantheon_session = configure_file(
 if get_option('wayland')
     wayland_session_components = [
       'gala-wayland',
-      'gala-daemon',
       gsd_components
     ]
 
