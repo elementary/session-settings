@@ -11,24 +11,7 @@ shell_component = {
 }
 
 required_components = {
-    desktop_plain: [
-        'org.gnome.SettingsDaemon.A11ySettings',
-        'org.gnome.SettingsDaemon.Color',
-        'org.gnome.SettingsDaemon.Datetime',
-        'org.gnome.SettingsDaemon.Housekeeping',
-        'org.gnome.SettingsDaemon.Keyboard',
-        'org.gnome.SettingsDaemon.MediaKeys',
-        'org.gnome.SettingsDaemon.Power',
-        'org.gnome.SettingsDaemon.PrintNotifications',
-        'org.gnome.SettingsDaemon.Rfkill',
-        'org.gnome.SettingsDaemon.ScreensaverProxy',
-        'org.gnome.SettingsDaemon.Sharing',
-        'org.gnome.SettingsDaemon.Smartcard',
-        'org.gnome.SettingsDaemon.Sound',
-        'org.gnome.SettingsDaemon.UsbProtection',
-        'org.gnome.SettingsDaemon.Wacom',
-        'org.gnome.SettingsDaemon.XSettings',
-    ],
+    desktop_plain: gsd_components,
 }
 
 gnome_session_wanted_targets = []

@@ -3,35 +3,10 @@ fallback_session = get_option('fallback-session')
 session_configuration = configuration_data()
 session_configuration.set('FALLBACK_SESSION', fallback_session)
 
-pantheon_components = [
+session_components = [
   'gala',
+  gsd_components
 ]
-
-gsd_components = [
-  'org.gnome.SettingsDaemon.A11ySettings',
-  'org.gnome.SettingsDaemon.Color',
-  'org.gnome.SettingsDaemon.Datetime',
-  'org.gnome.SettingsDaemon.Housekeeping',
-  'org.gnome.SettingsDaemon.Keyboard',
-  'org.gnome.SettingsDaemon.MediaKeys',
-  'org.gnome.SettingsDaemon.Power',
-  'org.gnome.SettingsDaemon.PrintNotifications',
-  'org.gnome.SettingsDaemon.Rfkill',
-  'org.gnome.SettingsDaemon.ScreensaverProxy',
-  'org.gnome.SettingsDaemon.Sharing',
-  'org.gnome.SettingsDaemon.Smartcard',
-  'org.gnome.SettingsDaemon.Sound',
-  'org.gnome.SettingsDaemon.UsbProtection',
-  'org.gnome.SettingsDaemon.Wacom',
-  'org.gnome.SettingsDaemon.XSettings',
-]
-
-# Needs a minimum 3.28 GNOME stack
-gsd_minimum_version = '>= 3.36.0'
-
-gsd_dep = dependency('gnome-settings-daemon', version: gsd_minimum_version)
-
-session_components = pantheon_components + gsd_components
 
 session_configuration.set('SESSION_COMPONENTS', ';'.join(session_components))
 
