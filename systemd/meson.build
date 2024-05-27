@@ -19,7 +19,7 @@ foreach component: required_components[desktop_plain]
     gnome_session_wanted_targets += 'Wants=@0@.target'.format(component)
 endforeach
 
-configure_file(
+session_config = configure_file(
     input: 'gnome.session.conf.in',
     output: 'session.conf',
     configuration: {
@@ -27,4 +27,9 @@ configure_file(
         'wants_required_components': '\n'.join(gnome_session_wanted_targets),
     },
     install_dir: systemd_userunitdir / 'gnome-session@pantheon.target.d',
+)
+
+install_data(
+    session_config,
+    install_dir: systemd_userunitdir / 'gnome-session@pantheon-wayland.target.d',
 )
