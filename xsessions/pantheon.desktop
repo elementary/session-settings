@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Compatability Session
+Name=Compatibility Session
 Comment=Pantheon on X11
 Exec=gnome-session --session=pantheon
 TryExec=io.elementary.wingpanel
