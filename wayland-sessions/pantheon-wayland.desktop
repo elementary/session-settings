@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Pantheon (Wayland)
-Comment=This session provides elementary experience
+Name=Secure Session
+Comment=Pantheon on Wayland
 Exec=gnome-session --session=pantheon-wayland
 TryExec=io.elementary.wingpanel
 Icon=
