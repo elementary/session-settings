@@ -2,6 +2,7 @@ project('elementary-session-settings',
         version: '5.0.3',
         default_options: 'sysconfdir=/etc')
 
+i18n = import('i18n')
 prefix = get_option('prefix')
 datadir = join_paths(prefix, get_option('datadir'))
 
@@ -25,6 +26,8 @@ gsd_components = [
     'org.gnome.SettingsDaemon.Wacom',
     'org.gnome.SettingsDaemon.XSettings',
 ]
+
+subdir('po')
 
 if get_option('mimeapps-list')
     subdir('applications')
