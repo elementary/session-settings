@@ -3,7 +3,7 @@ pantheon-xsession-settings (8.0.0) noble; urgency=medium
   * Add systemd support
   * Add Wayland session
 
- -- Danielle Foré <danielle@elemnentary.io>  Thu, 30 May 2024 10:54:39 -0700
+ -- Danielle Foré <danielle@elementary.io>  Thu, 08 Aug 2024 10:25:03 -0700
 
 pantheon-xsession-settings (6.0.0) focal; urgency=medium
 
