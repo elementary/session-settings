@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-05 10:23-0700\n"
+"POT-Creation-Date: 2024-09-04 16:11+0000\n"
 "PO-Revision-Date: 2024-08-07 15:16+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/"
@@ -28,9 +28,14 @@ msgid "Pantheon on Wayland"
 msgstr "Pantheon Waylanden"
 
 #: xsessions/pantheon.desktop.in:3
-msgid "Compatibility Session"
-msgstr "Kompatibilitási munkamenet"
+#, fuzzy
+#| msgid "Secure Session"
+msgid "Classic Session"
+msgstr "Biztonságos munkamenet"
 
 #: xsessions/pantheon.desktop.in:4
 msgid "Pantheon on X11"
 msgstr "Pantheon X11-en"
+
+#~ msgid "Compatibility Session"
+#~ msgstr "Kompatibilitási munkamenet"

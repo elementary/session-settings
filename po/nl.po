@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-05 10:23-0700\n"
+"POT-Creation-Date: 2024-09-04 16:11+0000\n"
 "PO-Revision-Date: 2024-08-17 17:19+0000\n"
 "Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
-"Language-Team: Dutch <https://l10n.elementary.io/projects/desktop/"
-"session-settings/nl/>\n"
+"Language-Team: Dutch <https://l10n.elementary.io/projects/desktop/session-"
+"settings/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,9 +28,14 @@ msgid "Pantheon on Wayland"
 msgstr "Pantheon op Wayland"
 
 #: xsessions/pantheon.desktop.in:3
-msgid "Compatibility Session"
-msgstr "Compitabiliteitsessie"
+#, fuzzy
+#| msgid "Secure Session"
+msgid "Classic Session"
+msgstr "Veilige sessie"
 
 #: xsessions/pantheon.desktop.in:4
 msgid "Pantheon on X11"
 msgstr "Pantheon op X11"
+
+#~ msgid "Compatibility Session"
+#~ msgstr "Compitabiliteitsessie"

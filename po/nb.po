@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-05 10:23-0700\n"
+"POT-Creation-Date: 2024-09-04 16:11+0000\n"
 "PO-Revision-Date: 2024-09-02 00:57+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/desktop/"
@@ -28,9 +28,14 @@ msgid "Pantheon on Wayland"
 msgstr "Pantheon på Wayland"
 
 #: xsessions/pantheon.desktop.in:3
-msgid "Compatibility Session"
-msgstr "Kompatibilitetssøkt"
+#, fuzzy
+#| msgid "Secure Session"
+msgid "Classic Session"
+msgstr "Sikker økt"
 
 #: xsessions/pantheon.desktop.in:4
 msgid "Pantheon on X11"
 msgstr "Pantheon på X11"
+
+#~ msgid "Compatibility Session"
+#~ msgstr "Kompatibilitetssøkt"
