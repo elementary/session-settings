@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-05 10:23-0700\n"
+"POT-Creation-Date: 2024-09-04 16:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgid "Pantheon on Wayland"
 msgstr ""
 
 #: xsessions/pantheon.desktop.in:3
-msgid "Compatibility Session"
+msgid "Classic Session"
 msgstr ""
 
 #: xsessions/pantheon.desktop.in:4
