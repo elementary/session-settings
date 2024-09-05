@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-04 16:11+0000\n"
-"PO-Revision-Date: 2024-08-12 08:16+0000\n"
-"Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
-"Language-Team: Polish <https://l10n.elementary.io/projects/desktop/session-"
-"settings/pl/>\n"
+"PO-Revision-Date: 2024-09-05 16:46+0000\n"
+"Last-Translator: Marcin Serwin <marcin@serwin.dev>\n"
+"Language-Team: Polish <https://l10n.elementary.io/projects/desktop/"
+"session-settings/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,10 +29,8 @@ msgid "Pantheon on Wayland"
 msgstr "Pantheon na Waylandzie"
 
 #: xsessions/pantheon.desktop.in:3
-#, fuzzy
-#| msgid "Secure Session"
 msgid "Classic Session"
-msgstr "Bezpieczna sesja"
+msgstr "Klasyczna sesja"
 
 #: xsessions/pantheon.desktop.in:4
 msgid "Pantheon on X11"
