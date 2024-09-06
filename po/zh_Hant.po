@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-04 16:11+0000\n"
-"PO-Revision-Date: 2024-09-02 22:33+0000\n"
+"PO-Revision-Date: 2024-09-06 10:13+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "desktop/session-settings/zh_Hant/>\n"
@@ -28,10 +28,8 @@ msgid "Pantheon on Wayland"
 msgstr "Wayland 上的 Pantheon"
 
 #: xsessions/pantheon.desktop.in:3
-#, fuzzy
-#| msgid "Secure Session"
 msgid "Classic Session"
-msgstr "安全工作階段"
+msgstr "經典工作階段"
 
 #: xsessions/pantheon.desktop.in:4
 msgid "Pantheon on X11"
