@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-04 16:11+0000\n"
-"PO-Revision-Date: 2024-08-07 15:16+0000\n"
+"PO-Revision-Date: 2024-09-09 15:12+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/"
 "session-settings/uk/>\n"
@@ -29,10 +29,8 @@ msgid "Pantheon on Wayland"
 msgstr "Pantheon на Wayland"
 
 #: xsessions/pantheon.desktop.in:3
-#, fuzzy
-#| msgid "Secure Session"
 msgid "Classic Session"
-msgstr "Безпечний сеанс"
+msgstr "Класичний сеанс"
 
 #: xsessions/pantheon.desktop.in:4
 msgid "Pantheon on X11"
