@@ -1,3 +1,9 @@
+pantheon-xsession-settings (8.0.1) noble; urgency=medium
+
+  * New upstream release
+
+ -- Danielle Foré <danielle@elementary.io>  Mon, 30 Sep 2024 16:52:56 -0700
+
 pantheon-xsession-settings (8.0.0) noble; urgency=medium
 
   * Add systemd support
