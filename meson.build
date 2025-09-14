@@ -40,6 +40,4 @@ if get_option('systemd')
     subdir('systemd')
 endif
 
-if get_option('wayland')
-    subdir('wayland-sessions')
-endif
+subdir('wayland-sessions')
