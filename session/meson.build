@@ -1,21 +1,23 @@
-fallback_session = get_option('fallback-session')
+if get_option('x11')
+  fallback_session = get_option('fallback-session')
 
-session_configuration = configuration_data()
-session_configuration.set('FALLBACK_SESSION', fallback_session)
+  session_configuration = configuration_data()
+  session_configuration.set('FALLBACK_SESSION', fallback_session)
 
-session_components = [
-  'gala',
-  gsd_components
-]
+  session_components = [
+    'gala',
+    gsd_components
+  ]
 
-session_configuration.set('SESSION_COMPONENTS', ';'.join(session_components))
+  session_configuration.set('SESSION_COMPONENTS', ';'.join(session_components))
 
-pantheon_session = configure_file(
-  input: 'pantheon.session.in',
-  output: '@BASENAME@',
-  configuration: session_configuration,
-  install_dir: join_paths(datadir, 'gnome-session', 'sessions')
-)
+  pantheon_session = configure_file(
+    input: 'pantheon.session.in',
+    output: '@BASENAME@',
+    configuration: session_configuration,
+    install_dir: join_paths(datadir, 'gnome-session', 'sessions')
+  )
+endif
 
 wayland_session_components = [
   'gala-wayland',

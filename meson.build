@@ -34,7 +34,10 @@ if get_option('mimeapps-list')
 endif
 
 subdir('session')
-subdir('xsessions')
+
+if get_option('x11')
+    subdir('xsessions')
+endif
 
 if get_option('systemd')
     subdir('systemd')
