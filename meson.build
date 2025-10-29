@@ -1,5 +1,5 @@
 project('elementary-session-settings',
-        version: '8.0.1',
+        version: '8.1.0',
         default_options: 'sysconfdir=/etc')
 
 i18n = import('i18n')
