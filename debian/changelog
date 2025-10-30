@@ -1,3 +1,9 @@
+pantheon-xsession-settings (8.1.0) noble; urgency=medium
+
+  * New upstream release
+
+ -- Danielle Foré <danielle@elementary.io>  Thu, 30 Oct 2025 09:33:43 -0700
+
 pantheon-xsession-settings (8.0.1) noble; urgency=medium
 
   * New upstream release
