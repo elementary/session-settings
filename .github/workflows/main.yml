@@ -27,7 +27,7 @@ jobs:
     - name: Install Dependencies
       run: |
         apt update
-        apt install -y meson pkg-config gnome-settings-daemon gnome-settings-daemon-dev onboard gnome-keyring orca
+        apt install -y meson pkg-config gnome-settings-daemon gnome-settings-daemon-dev gnome-keyring orca
 
     - name: Build
       run: |
