@@ -39,33 +39,6 @@ autostartdir = join_paths(get_option('sysconfdir'), 'xdg', 'autostart')
 gsd_dir = gsd_dep.get_pkgconfig_variable('prefix')
 desktop_file_install = find_program('desktop-file-install')
 
-foreach component : gsd_components
-  original_filename = component + '.desktop'
-
-  if get_option('detect-program-prefixes') == true
-    original_autostart_file = join_paths(gsd_dir, 'etc/xdg/autostart', original_filename)
-  else
-    original_autostart_file = join_paths(autostartdir, original_filename)
-  endif
-
-  patched_filename = 'pantheon-' + component + '.desktop'
-
-  custom_target('create-gsd-autostart' + patched_filename,
-    input: original_autostart_file,
-    output: patched_filename,
-    command: [
-      desktop_file_install,
-      '--set-key=OnlyShowIn',
-      '--set-value=Pantheon',
-      '--vendor=pantheon',
-      '--dir=@OUTDIR@',
-      '@INPUT@',
-    ],
-    install: true,
-    install_dir: autostartdir,
-  )
-endforeach
-
 gnome_keyring = find_program('gnome-keyring-daemon')
 orca = find_program('orca')
 
