@@ -27,6 +27,16 @@ gsd_components = [
     'org.gnome.SettingsDaemon.XSettings',
 ]
 
+keyring_components = [
+    'gnome-keyring-daemon',
+    'gcr-ssh-agent'
+]
+
+desktop_components = [
+    'orca',
+    'io.elementary.settings-daemon'
+]
+
 subdir('po')
 
 if get_option('mimeapps-list')
