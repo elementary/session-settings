@@ -1,5 +1,5 @@
-Upstream-Name: pantheon-xsession-settings
-Source: https://github.com/elementary/pantheon-xsession-settings
+Upstream-Name: io.elementary.session-settings
+Source: https://github.com/elementary/session-settings
 License: GPL-3
 
 Copyright: 2011 Sergey "Shnatsel" Davidoff <shnatsel@gmail.com>
