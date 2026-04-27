@@ -8,6 +8,3 @@
 
 %:
 	dh $@ --buildsystem=meson
-
-override_dh_auto_configure:
-	dh_auto_configure -- -Dx11=true
