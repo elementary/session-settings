@@ -33,8 +33,12 @@ keyring_components = [
 ]
 
 desktop_components = [
+    'io.elementary.bluetooth',
+    'io.elementary.desktop.agent-polkit',
+    'io.elementary.settings-daemon',
     'orca',
-    'io.elementary.settings-daemon'
+    'pantheon-parental-controls-client',
+    'user-dirs-update-gtk'
 ]
 
 subdir('po')
