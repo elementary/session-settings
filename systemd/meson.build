@@ -38,10 +38,12 @@ session_config = configure_file(
         'requires_component': shell_component[desktop_targets],
         'wants_required_components': '\n'.join(gnome_session_wanted_targets, gnome_session_wanted_sockets, gnome_session_wanted_services),
     },
-    install_dir: systemd_userunitdir / 'gnome-session@pantheon.target.d',
-)
-
-install_data(
-    session_config,
     install_dir: systemd_userunitdir / 'gnome-session@pantheon-wayland.target.d',
 )
+
+if get_option('x11')
+    install_data(
+        session_config,
+        install_dir: systemd_userunitdir / 'gnome-session@pantheon.target.d',
+    )
+endif
